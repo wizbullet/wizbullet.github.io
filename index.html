@@ -10,7 +10,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-C590Q46WEG"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'G-C590Q46WEG');
@@ -19,9 +23,18 @@
 </head>
 
 <body>
+<div class="root">
     <section class="logo-container">
-        <img class="site-logo" src="/assets/media/logo.png" width="240" />
+        <img src="/assets/media/white-logo.png" width="240"/>
     </section>
+    <div class="grid">
+        <section class="code-container">
+            <h2>Custom config</h2>
+            <p>Copy and paste this code into <code>autoexec.cfg</code> available in your <code>csgo-directory/cfg</code></p>
+            <div id="config-container"></div>
+        </section>
+    </div>
+</div>
+<script src="/assets/scripts/main.js"></script>
 </body>
-
 </html>

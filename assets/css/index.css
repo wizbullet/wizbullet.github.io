@@ -1,4 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda&display=swap');
+
+html {
+    font-family: 'Coda', cursive;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 8px;
+}
+
+.root {
+    padding: 16px;
+}
+
 .logo-container {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-attachment: fixed;
+    background-image: url("/assets/media/cover.webp");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.code-container {
+    display: inline-block;
+    background-color: white;
+    padding: 8px;
+    border-radius: 15px;
+    box-shadow: gray;
+}
+
+#config-container {
+    max-height: 480px;
+    background-color: black;
+    color: white;
+    overflow: auto;
+}
+
+.grid {
+    display: grid;
+    column-count: 2;
 }
