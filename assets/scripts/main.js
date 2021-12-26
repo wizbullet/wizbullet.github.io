@@ -1,7 +1,6 @@
 async function populateCodeSection(){
     const codeElement = document.getElementById("config-container")
     codeElement.innerText = await getConfigFileContent()
-    console.log(await getConfigFileContent())
 }
 populateCodeSection()
 
